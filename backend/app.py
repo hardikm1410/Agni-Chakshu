@@ -417,22 +417,23 @@ def fetch_firms_data(map_key: str, source: str = "VIIRS_SNPP_NRT",
         logger.error(f"Error parsing FIRMS data: {e}")
         return None
 
-def load_sample_firms_data() -> pd.DataFrame:
+def load_sample_firms_data(csv_path: str = None) -> pd.DataFrame:
     """
-    Load sample FIRMS data for testing/development
-    Uses the sample data we already have
+    Load sample FIRMS data for testing/development.
+    If csv_path is provided, use that; otherwise use default sample.
     """
-    sample_path = "/home/hardik/Desktop/gods-eye-view/src/data/fixtures/firms-viirs-noaa20-sample.csv"
-    if os.path.exists(sample_path):
+    if csv_path is None:
+        csv_path = "/home/hardik/Desktop/gods-eye-view/src/data/fixtures/firms-viirs-noaa20-sample.csv"
+    if os.path.exists(csv_path):
         try:
-            df = pd.read_csv(sample_path)
-            logger.info(f"Loaded {len(df)} sample FIRMS records from {sample_path}")
+            df = pd.read_csv(csv_path)
+            logger.info(f"Loaded {len(df)} sample FIRMS records from {csv_path}")
             return df
         except Exception as e:
-            logger.error(f"Error loading sample FIRMS data: {e}")
+            logger.error(f"Error loading sample FIRMS data from {csv_path}: {e}")
             return pd.DataFrame()
     else:
-        logger.warning("Sample FIRMS data not found")
+        logger.warning(f"Sample FIRMS data not found at {csv_path}")
         return pd.DataFrame()
 
 @app.on_event("startup")
@@ -489,7 +490,8 @@ async def get_hotspots(
     area: str = Query("69.5,22.0,70.5,22.8", description="Area bbox (west,south,east,north)"),
     days: int = Query(5, description="Number of days to look back (max 5 due to FIRMS API limit)"),
     use_sample: bool = Query(False, description="Force use of sample data"),
-    refresh: bool = Query(False, description="Force refresh of FIRMS data")
+    refresh: bool = Query(False, description="Force refresh of FIRMS data"),
+    csv_path: Optional[str] = Query(None, description="Path to FIRMS CSV file for processing")
 ):
     """
     Get classified FIRMS hotspots as GeoJSON for OSM overlay
@@ -497,42 +499,84 @@ async def get_hotspots(
     Parameters:
     - map_key: NASA FIRMS MAP_KEY (optional, uses sample if not provided)
     - source: FIRMS data source (default: VIIRS_SNPP_NRT)
-    - area: Bounding box as "west,south,east,north"
+    - area: Bounding box as "west,south,east,north)"
     - days: Number of days of historical data to consider
     - use_sample: Whether to use bundled sample data
     - refresh: Whether to force refresh from API
+    - csv_path: Path to FIRMS CSV file for processing (overrides other sources if provided)
     
     Returns:
     - GeoJSON FeatureCollection with classified hotspots
     """
     global facilities
-    
+
     # Ensure facilities are loaded
     if not facilities:
         facilities = load_facility_data()
-    
-    # Determine data source
+
+    # Determine data source - CSV file takes precedence if provided
     df = None
-    
-    if use_sample or not map_key:
-        logger.info("Using sample FIRMS data")
-        df = load_sample_firms_data()
-    else:
-        logger.info(f"Fetching live FIRMS data: {days} days, source={source}")
-        df = fetch_firms_data(map_key, source, area, days)
-        
-        # Fallback to sample data if API fails
-        if df is None or len(df) == 0:
-            logger.warning("Live FIRMS data fetch failed, falling back to sample data")
+
+    # Override with explicit CSV path if provided
+    if csv_path and os.path.exists(csv_path):
+        try:
+            df = pd.read_csv(csv_path)
+            # Ensure required columns are present; add missing ones with defaults
+            if 'instrument' not in df.columns:
+                # Derive instrument from satellite if possible, otherwise default
+                def get_instrument(sat):
+                    if pd.isna(sat) or sat == '':
+                        return 'Unknown'
+                    # NPP/N21 suffix indicates VIIRS
+                    if 'NPP' in str(sat) or 'N21' in str(sat):
+                        return 'VIIRS'
+                    # Aqua/Terra indicate MODIS
+                    if 'Aqua' in str(sat) or 'Terra' in str(sat):
+                        return 'MODIS'
+                    return 'Unknown'
+                df['instrument'] = df['satellite'].apply(get_instrument)
+                logger.info(f"Added missing 'instrument' column with default values")
+            
+            # Ensure all expected columns are present
+            expected_columns = ['latitude', 'longitude', 'bright_ti4', 'bright_ti5', 'scan', 'track', 
+                              'acq_date', 'acq_time', 'satellite', 'instrument', 'confidence', 'version', 'frp', 'daynight']
+            missing_cols = [col for col in expected_columns if col not in df.columns]
+            if missing_cols:
+                logger.warning(f"CSV missing columns: {missing_cols}. Adding with default values.")
+                for col in missing_cols:
+                    if col in ['bright_ti4', 'bright_ti5', 'scan', 'track', 'frp']:
+                        df[col] = 0.0
+                    elif col in ['acq_time']:
+                        df[col] = 0
+                    else:
+                        df[col] = 'Unknown'
+            
+            logger.info(f"Loaded {len(df)} FIRMS records from provided CSV: {csv_path}")
+        except Exception as e:
+            logger.error(f"Error loading FIRMS data from CSV {csv_path}: {e}")
+            df = None  # Will fall back to other sources
+
+    # If no CSV or CSV failed, try other sources
+    if df is None:
+        if use_sample or not map_key:
+            logger.info("Using sample FIRMS data")
             df = load_sample_firms_data()
-    
+        else:
+            logger.info(f"Fetching live FIRMS data: {days} days, source={source}")
+            df = fetch_firms_data(map_key, source, area, days)
+            
+            # Fallback to sample data if API fails
+            if df is None or len(df) == 0:
+                logger.warning("Live FIRMS data fetch failed, falling back to sample data")
+                df = load_sample_firms_data()
+
     if df is None or len(df) == 0:
         logger.error("No FIRMS data available")
         raise HTTPException(
             status_code=503,
-            detail="No FIRMS data available from API or sample sources"
+            detail="No FIRMS data available from API, sample, or CSV sources"
         )
-    
+
     # Process each record
     features = []
     stats = {
@@ -540,7 +584,7 @@ async def get_hotspots(
         "processed": 0,
         "errors": 0
     }
-    
+
     try:
         for idx, row in df.iterrows():
             try:
@@ -576,7 +620,8 @@ async def get_hotspots(
                 "source": source,
                 "area": area,
                 "days": days,
-                "used_sample_data": use_sample or not bool(map_key)
+                "used_sample_data": use_sample or not bool(map_key),
+                "csv_path_used": bool(csv_path and os.path.exists(csv_path))
             },
             "processing_stats": stats,
             "timestamp": datetime.now().isoformat(),
@@ -602,13 +647,14 @@ async def get_hotspots_geojson(
     area: str = Query("69.5,22.0,70.5,22.8", description="Area bbox (west,south,east,north)"),
     days: int = Query(5, description="Number of days to look back (max 5 due to FIRMS API limit)"),
     use_sample: bool = Query(False, description="Force use of sample data"),
-    refresh: bool = Query(False, description="Force refresh of FIRMS data")
+    refresh: bool = Query(False, description="Force refresh of FIRMS data"),
+    csv_path: Optional[str] = Query(None, description="Path to FIRMS CSV file for processing")
 ):
     """
     Get pure GeoJSON output for direct use in mapping libraries
     This endpoint returns only the FeatureCollection without metadata wrapper
     """
-    result = await get_hotspots(map_key, source, area, days, use_sample, refresh)
+    result = await get_hotspots(map_key, source, area, days, use_sample, refresh, csv_path)
     # Return just the GeoJSON part
     return {
         "type": result["type"],
