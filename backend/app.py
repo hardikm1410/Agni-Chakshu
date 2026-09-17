@@ -38,7 +38,7 @@ app.add_middleware(
 
 # Configuration
 FIRMS_API_BASE = "https://firms.modaps.eosdis.nasa.gov/api/area/csv"
-DEFAULT_MAP_KEY = os.getenv("FIRMS_MAP_KEY", "3f0c20da7f7a6b406eced6fecf905b95")  # Should be set via environment variable
+DEFAULT_MAP_KEY = os.getenv("FIRMS_MAP_KEY", "")  # Should be set via environment variable
 DATA_CACHE_DIR = "/home/hardik/Desktop/EmberWatch/backend/data"
 
 # Ensure cache directory exists
