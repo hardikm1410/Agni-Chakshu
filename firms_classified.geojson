@@ -1,0 +1,1400 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.67046,
+          38.99488
+        ]
+      },
+      "properties": {
+        "bright_ti4": 303.6,
+        "bright_ti5": 290.73,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1006,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.53,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 192.25084271205574,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 303.6,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.61848,
+          39.49126
+        ]
+      },
+      "properties": {
+        "bright_ti4": 303.73,
+        "bright_ti5": 290.12,
+        "scan": 0.41,
+        "track": 0.37,
+        "acq_date": "2026-07-16",
+        "acq_time": 1006,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.64,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 190.25067122562274,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 303.73,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.96709,
+          32.44483
+        ]
+      },
+      "properties": {
+        "bright_ti4": 301.45,
+        "bright_ti5": 289.55,
+        "scan": 0.46,
+        "track": 0.47,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.4,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.0977042349522,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 301.45,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.96341,
+          32.44652
+        ]
+      },
+      "properties": {
+        "bright_ti4": 300.77,
+        "bright_ti5": 289.52,
+        "scan": 0.46,
+        "track": 0.47,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.35,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.09412100097006,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 300.77,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.81448,
+          32.45192
+        ]
+      },
+      "properties": {
+        "bright_ti4": 303.1,
+        "bright_ti5": 291.25,
+        "scan": 0.47,
+        "track": 0.48,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.63,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 186.94570142441276,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 303.1,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.2234,
+          32.63403
+        ]
+      },
+      "properties": {
+        "bright_ti4": 305.87,
+        "bright_ti5": 281.35,
+        "scan": 0.57,
+        "track": 0.52,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 3.6,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 185.36701060955775,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 305.87,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.14871,
+          32.85691
+        ]
+      },
+      "properties": {
+        "bright_ti4": 305.1,
+        "bright_ti5": 290.02,
+        "scan": 0.44,
+        "track": 0.46,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.41,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.30176929948286,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 305.1,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.02994,
+          32.85783
+        ]
+      },
+      "properties": {
+        "bright_ti4": 301.7,
+        "bright_ti5": 290.95,
+        "scan": 0.45,
+        "track": 0.47,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.61,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.18323893438105,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 301.7,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.61848,
+          33.49317
+        ]
+      },
+      "properties": {
+        "bright_ti4": 301.55,
+        "bright_ti5": 290.17,
+        "scan": 0.41,
+        "track": 0.45,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.74,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.8075467388113,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 301.55,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.82456,
+          33.61246
+        ]
+      },
+      "properties": {
+        "bright_ti4": 304.67,
+        "bright_ti5": 290.48,
+        "scan": 0.4,
+        "track": 0.44,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.13,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 188.02038383991038,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 304.67,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.71191,
+          33.71718
+        ]
+      },
+      "properties": {
+        "bright_ti4": 315.92,
+        "bright_ti5": 292.19,
+        "scan": 0.4,
+        "track": 0.44,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.78,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.91425429827098,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 315.92,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.47431,
+          33.79416
+        ]
+      },
+      "properties": {
+        "bright_ti4": 312.66,
+        "bright_ti5": 293.24,
+        "scan": 0.41,
+        "track": 0.45,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.11,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 187.68177843981294,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 312.66,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.82031,
+          34.0404
+        ]
+      },
+      "properties": {
+        "bright_ti4": 304.28,
+        "bright_ti5": 292.88,
+        "scan": 0.39,
+        "track": 0.44,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.51,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 188.04230885141797,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 304.28,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.42964,
+          34.14165
+        ]
+      },
+      "properties": {
+        "bright_ti4": 305.36,
+        "bright_ti5": 292.94,
+        "scan": 0.4,
+        "track": 0.45,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.58,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 187.65874510014848,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 305.36,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.19521,
+          34.15444
+        ]
+      },
+      "properties": {
+        "bright_ti4": 314.58,
+        "bright_ti5": 292.86,
+        "scan": 0.56,
+        "track": 0.43,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.73,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 188.4236052733684,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 314.58,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.51984,
+          34.33553
+        ]
+      },
+      "properties": {
+        "bright_ti4": 317.65,
+        "bright_ti5": 293.02,
+        "scan": 0.53,
+        "track": 0.42,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.94,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 188.75902864932334,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 317.65,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.8526,
+          34.35427
+        ]
+      },
+      "properties": {
+        "bright_ti4": 307.4,
+        "bright_ti5": 293.67,
+        "scan": 0.43,
+        "track": 0.46,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.23,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 187.0963984702169,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 307.4,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.64416,
+          34.43204
+        ]
+      },
+      "properties": {
+        "bright_ti4": 309.01,
+        "bright_ti5": 293.03,
+        "scan": 0.52,
+        "track": 0.42,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.73,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 188.8892563860117,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 309.01,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.33733,
+          34.60664
+        ]
+      },
+      "properties": {
+        "bright_ti4": 315.23,
+        "bright_ti5": 295.8,
+        "scan": 0.4,
+        "track": 0.44,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 2.08,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 187.59647668431649,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 315.23,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.1028,
+          34.62088
+        ]
+      },
+      "properties": {
+        "bright_ti4": 312.39,
+        "bright_ti5": 293.19,
+        "scan": 0.41,
+        "track": 0.45,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.45,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 187.36338381080415,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 312.39,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.88654,
+          35.97387
+        ]
+      },
+      "properties": {
+        "bright_ti4": 304.59,
+        "bright_ti5": 294.37,
+        "scan": 0.44,
+        "track": 0.39,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.08,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 190.23347158689748,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 304.59,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.40484,
+          36.53365
+        ]
+      },
+      "properties": {
+        "bright_ti4": 298.05,
+        "bright_ti5": 286.96,
+        "scan": 0.4,
+        "track": 0.37,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.3,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 191.78853892189642,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 298.05,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.37177,
+          36.54124
+        ]
+      },
+      "properties": {
+        "bright_ti4": 313.73,
+        "bright_ti5": 294.22,
+        "scan": 0.45,
+        "track": 0.39,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.61,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 189.76168086558374,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 313.73,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.68037,
+          37.18347
+        ]
+      },
+      "properties": {
+        "bright_ti4": 301.12,
+        "bright_ti5": 287.73,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.55,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 192.11246587796802,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 301.12,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.92992,
+          37.45419
+        ]
+      },
+      "properties": {
+        "bright_ti4": 305.71,
+        "bright_ti5": 289.59,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.66,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 192.38236460106035,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "low",
+        "brightness_temp_k": 305.71,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.65945,
+          37.7546
+        ]
+      },
+      "properties": {
+        "bright_ti4": 300.09,
+        "bright_ti5": 287.81,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.39,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 192.13656841739933,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 300.09,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.18257,
+          37.88349
+        ]
+      },
+      "properties": {
+        "bright_ti4": 300.47,
+        "bright_ti5": 289.35,
+        "scan": 0.39,
+        "track": 0.37,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.49,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 191.6716150766633,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 300.47,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.18698,
+          37.88424
+        ]
+      },
+      "properties": {
+        "bright_ti4": 304.76,
+        "bright_ti5": 289.17,
+        "scan": 0.39,
+        "track": 0.37,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.49,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 191.67607131808893,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 304.76,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.39809,
+          37.95056
+        ]
+      },
+      "properties": {
+        "bright_ti4": 304.05,
+        "bright_ti5": 293.11,
+        "scan": 0.38,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.28,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 192.88857772044676,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "medium",
+        "brightness_temp_k": 304.05,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.9355,
+          38.00561
+        ]
+      },
+      "properties": {
+        "bright_ti4": 304.25,
+        "bright_ti5": 291.58,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.32,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 192.43196951406392,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 304.25,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.11389,
+          38.01419
+        ]
+      },
+      "properties": {
+        "bright_ti4": 303.69,
+        "bright_ti5": 292.7,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 1.83,
+        "daynight": "N",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 192.61046681981784,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "medium",
+        "brightness_temp_k": 303.69,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.3797,
+          38.12214
+        ]
+      },
+      "properties": {
+        "bright_ti4": 305.0,
+        "bright_ti5": 288.9,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.41,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 191.8875459693211,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 305.0,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.16856,
+          38.12698
+        ]
+      },
+      "properties": {
+        "bright_ti4": 300.13,
+        "bright_ti5": 289.16,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.42,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 191.67751754123827,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 300.13,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.98375,
+          38.21516
+        ]
+      },
+      "properties": {
+        "bright_ti4": 300.37,
+        "bright_ti5": 288.49,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.43,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 192.49719879405978,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 300.37,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.74693,
+          38.30271
+        ]
+      },
+      "properties": {
+        "bright_ti4": 297.18,
+        "bright_ti5": 285.19,
+        "scan": 0.38,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 0.6,
+        "daynight": "N",
+        "fire_type": "fire_small_or_unknown",
+        "nearest_facility_distance_deg": 193.26499741225763,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "low",
+        "brightness_temp_k": 297.18,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.2137,
+          38.71033
+        ]
+      },
+      "properties": {
+        "bright_ti4": 335.37,
+        "bright_ti5": 297.84,
+        "scan": 0.39,
+        "track": 0.36,
+        "acq_date": "2026-07-16",
+        "acq_time": 1009,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 19.84,
+        "daynight": "N",
+        "fire_type": "wildfire_or_agricultural_large",
+        "nearest_facility_distance_deg": 191.7713386243178,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "high",
+        "brightness_temp_k": 335.37,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.12763,
+          39.7261
+        ]
+      },
+      "properties": {
+        "bright_ti4": 344.39,
+        "bright_ti5": 311.6,
+        "scan": 0.75,
+        "track": 0.77,
+        "acq_date": "2026-07-16",
+        "acq_time": 1947,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 16.63,
+        "daynight": "D",
+        "fire_type": "wildfire_or_agricultural_large",
+        "nearest_facility_distance_deg": 190.77898497582726,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "high",
+        "brightness_temp_k": 344.39,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.12675,
+          39.72685
+        ]
+      },
+      "properties": {
+        "bright_ti4": 343.54,
+        "bright_ti5": 312.62,
+        "scan": 0.75,
+        "track": 0.77,
+        "acq_date": "2026-07-16",
+        "acq_time": 1947,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 8.96,
+        "daynight": "D",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 190.77817687116237,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "medium",
+        "brightness_temp_k": 343.54,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.50858,
+          33.41492
+        ]
+      },
+      "properties": {
+        "bright_ti4": 335.2,
+        "bright_ti5": 305.28,
+        "scan": 0.49,
+        "track": 0.49,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "l",
+        "version": "2.0NRT",
+        "frp": 8.6,
+        "daynight": "D",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 187.69320316939323,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 335.2,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.50378,
+          33.4199
+        ]
+      },
+      "properties": {
+        "bright_ti4": 345.25,
+        "bright_ti5": 306.36,
+        "scan": 0.49,
+        "track": 0.49,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 8.43,
+        "daynight": "D",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 187.68870576285417,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 345.25,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.66942,
+          33.94703
+        ]
+      },
+      "properties": {
+        "bright_ti4": 351.42,
+        "bright_ti5": 309.77,
+        "scan": 0.49,
+        "track": 0.49,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 25.62,
+        "daynight": "D",
+        "fire_type": "wildfire_intense",
+        "nearest_facility_distance_deg": 187.88591529905932,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "high",
+        "brightness_temp_k": 351.42,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.66402,
+          33.94752
+        ]
+      },
+      "properties": {
+        "bright_ti4": 342.25,
+        "bright_ti5": 303.87,
+        "scan": 0.49,
+        "track": 0.49,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 25.62,
+        "daynight": "D",
+        "fire_type": "wildfire_or_agricultural_large",
+        "nearest_facility_distance_deg": 187.88055593415902,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "high",
+        "brightness_temp_k": 342.25,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.22691,
+          34.131
+        ]
+      },
+      "properties": {
+        "bright_ti4": 343.89,
+        "bright_ti5": 311.37,
+        "scan": 0.46,
+        "track": 0.47,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "n",
+        "version": "2.0NRT",
+        "frp": 8.96,
+        "daynight": "D",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 188.45377339478048,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "plant",
+        "intensity_level": "medium",
+        "brightness_temp_k": 343.89,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.94763,
+          39.47552
+        ]
+      },
+      "properties": {
+        "bright_ti4": 334.26,
+        "bright_ti5": 309.04,
+        "scan": 0.52,
+        "track": 0.41,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "l",
+        "version": "2.0NRT",
+        "frp": 4.26,
+        "daynight": "D",
+        "fire_type": "fire_medium",
+        "nearest_facility_distance_deg": 192.5690821589702,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "medium",
+        "brightness_temp_k": 334.26,
+        "is_persistent_candidate": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.12376,
+          39.72568
+        ]
+      },
+      "properties": {
+        "bright_ti4": 348.65,
+        "bright_ti5": 320.76,
+        "scan": 0.42,
+        "track": 0.45,
+        "acq_date": "2026-07-16",
+        "acq_time": 2127,
+        "satellite": "N20",
+        "instrument": "VIIRS",
+        "confidence": "l",
+        "version": "2.0NRT",
+        "frp": 27.73,
+        "daynight": "D",
+        "fire_type": "wildfire_or_agricultural_large",
+        "nearest_facility_distance_deg": 190.77509281349822,
+        "nearest_facility_name": null,
+        "nearest_facility_type": "oil",
+        "intensity_level": "high",
+        "brightness_temp_k": 348.65,
+        "is_persistent_candidate": false
+      }
+    }
+  ]
+}

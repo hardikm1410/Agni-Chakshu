@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-09-17T12:20:20Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/91585872",
+        "industrial": "refinery",
+        "landuse": "industrial",
+        "name": "Reliance Refinery",
+        "operator": "Reliance Industries Limited",
+        "website": "https://www.ril.com/OurBusinesses/PetroleumRefiningAndMarketing.aspx",
+        "wikipedia": "en:Jamnagar Refinery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.8665828,
+          22.3367861
+        ]
+      },
+      "id": "way/91585872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/295429703",
+        "plant:output:electricity": "720 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.8669379,
+          22.3230732
+        ]
+      },
+      "id": "way/295429703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/322037750",
+        "landuse": "industrial",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.8603135,
+          22.3422483
+        ]
+      },
+      "id": "way/322037750"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1333561675",
+        "landuse": "industrial",
+        "name:en": "DTA Refinery Captive Power Plant (CPP)",
+        "power": "plant",
+        "source": "https://environmentclearance.nic.in/writereaddata/Online/TOR/27_Dec_2021_16305618795707294Coverletter.pdf",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.8569452,
+          22.3289612
+        ]
+      },
+      "id": "way/1333561675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1340347659",
+        "industrial": "oil",
+        "landuse": "industrial",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          69.8599535,
+          22.3669749
+        ]
+      },
+      "id": "way/1340347659"
+    }
+  ]
+}
