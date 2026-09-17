@@ -1,0 +1,291 @@
+@import 'leaflet/dist/leaflet.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background-color: #020617;
+  color: #f4f4f5;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* 
+ * =========================================
+ * Background: Satellite / Earth at Night
+ * =========================================
+ */
+.thermal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  background: #020617 url('/earth-bg.jpg') no-repeat center center / cover;
+}
+
+/* Dark overlay gradient for readability (darker on left for sidebar) */
+.thermal-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(2,6,23,0.95) 0%, rgba(2,6,23,0.6) 35%, rgba(2,6,23,0.2) 100%),
+              radial-gradient(circle at center, transparent 0%, rgba(2,6,23,0.4) 100%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+@keyframes rise-bubble {
+  0% { transform: translateY(0) scale(0.8) translateX(0); opacity: 0; }
+  15% { opacity: 0.7; }
+  50% { transform: translateY(-50vh) scale(1) translateX(30px); opacity: 0.9; }
+  85% { opacity: 0.5; }
+  100% { transform: translateY(-110vh) scale(1.2) translateX(-30px); opacity: 0; }
+}
+
+/* Sidebar Links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #a1a1aa;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover, .nav-link.active {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.nav-link.dashboard:hover, .nav-link.dashboard.active {
+  background-color: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.nav-link.map:hover, .nav-link.map.active {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: #0ea5e9;
+}
+
+/* Shared Card Style */
+.thermal-card {
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   Home Page Specific Styles
+========================================= */
+
+.home-wrapper {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: -2rem; /* counteract main padding */
+  left: -2rem;
+  right: -2rem;
+  bottom: -2rem;
+  background: radial-gradient(circle at center, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.7) 100%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  color: #f8fafc;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.text-thermal {
+  background: linear-gradient(90deg, #3b82f6, #f97316, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.7;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.feature-card {
+  background-color: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.feature-card.tracking {
+  border-top: 4px solid #3b82f6;
+}
+
+.feature-card.tracking:hover {
+  border-color: #3b82f6;
+}
+
+.feature-card.analytics {
+  border-top: 4px solid #f97316;
+}
+
+.feature-card.analytics:hover {
+  border-color: #f97316;
+}
+
+.feature-title {
+  font-size: 1.75rem;
+  margin: 0 0 1rem 0;
+}
+
+.tracking .feature-title {
+  color: #fca5a5;
+}
+
+.analytics .feature-title {
+  color: #fdba74;
+}
+
+.feature-desc {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* =========================================
+   Dashboard Specific Styles
+========================================= */
+
+.dashboard-main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes ping-marker {
+  75%, 100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+.login-branding {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .login-branding {
+    display: flex;
+  }
+}
+
+
+
+/* Dark mode for Leaflet OpenStreetMap tiles */
+.leaflet-layer,
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.leaflet-control-attribution {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+}
+.leaflet-container {
+  background-color: #020617 !important;
+  font-family: inherit;
+}
+
+
+
